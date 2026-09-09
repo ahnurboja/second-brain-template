@@ -1,0 +1,28 @@
+{
+  "collapse-filter": false,
+  "search": "-tag:system -path:people",
+  "showTags": false,
+  "showAttachments": false,
+  "hideUnresolved": true,
+  "showOrphans": true,
+  "collapse-color-groups": false,
+  "colorGroups": [
+    { "query": "path:topics", "color": { "a": 1, "rgb": 4886745 } },
+    { "query": "path:projects", "color": { "a": 1, "rgb": 14711609 } },
+    { "query": "path:research", "color": { "a": 1, "rgb": 5025616 } },
+    { "query": "path:travel", "color": { "a": 1, "rgb": 16098851 } },
+    { "query": "path:people", "color": { "a": 1, "rgb": 5793216 } }
+  ],
+  "collapse-display": true,
+  "showArrow": false,
+  "textFadeMultiplier": 0,
+  "nodeSizeMultiplier": 1,
+  "lineSizeMultiplier": 1,
+  "collapse-forces": false,
+  "centerStrength": 0.5,
+  "repelStrength": 14,
+  "linkStrength": 1,
+  "linkDistance": 242,
+  "scale": 0.72,
+  "close": true
+}

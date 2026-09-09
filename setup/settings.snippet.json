@@ -1,0 +1,36 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//Users/YOU/second-brain/**)",
+      "Edit(//Users/YOU/second-brain/**)",
+      "Bash(git -C ~/second-brain *)",
+      "Bash(cd ~/second-brain && git *)"
+    ]
+  },
+  "hooks": {
+    "SessionStart": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "date '+Current date and time: %Y-%m-%d %H:%M (%A)'; cat ~/second-brain/.claude/rules/capture.md ~/second-brain/.claude/rules/todo.md ~/second-brain/TODO.md 2>/dev/null || true"
+          }
+        ]
+      }
+    ],
+    "SessionEnd": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "~/.claude/hooks/second-brain-autocommit.sh",
+            "timeout": 120,
+            "statusMessage": "Auto-committing second-brain notes"
+          }
+        ]
+      }
+    ]
+  }
+}
